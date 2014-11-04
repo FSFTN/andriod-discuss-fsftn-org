@@ -32,7 +32,6 @@ public class LatestPostsActivity extends ActionBarActivity {
 
 
         //set an alarm to start service every 1 minute
-        //can be changed
         AlarmManager am=(AlarmManager)getSystemService(ALARM_SERVICE);
         Intent srvce=new Intent(getApplicationContext(),ActivityCheckerService.class);
         PendingIntent pi =PendingIntent.getService(this,0,srvce,0);
